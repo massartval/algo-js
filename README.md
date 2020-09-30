@@ -1,0 +1,1 @@
+2.7.js : Check if input type is valid (not working)
