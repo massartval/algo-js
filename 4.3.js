@@ -2,7 +2,6 @@ const readlineSync = require("readline-sync");
 
 let n = readlineSync.question('How many random numbers do you want? ');
 
-
 /**
  * Returns a random number between 1 and 10.
  *
@@ -26,4 +25,5 @@ function multiRand(n) {
     }
     return array;
 }
+
 console.log(multiRand(n));
