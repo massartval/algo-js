@@ -1,4 +1,6 @@
-const readlineSync = require("readline-sync");
+let n = 1;
 
-let userName = readlineSync.question('Can you give me your name please?');
-console.log("Hello " + userName);
+function square(n) {
+    return pow(n, 2);
+}
+console.log(square(n))
