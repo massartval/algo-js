@@ -1,18 +1,20 @@
-const readlineSync = require("readline-sync");
-
-let n = Number (readlineSync.question('Factorial of n, with n = '));
-let acc = 1;
-
 function factorial(n) {
     if (n === 0) {
         return acc;
-    }
-    else if (n > 0) {
-        acc = n * factorial(n - 1);
-        return acc;
+    } else if (n > 0) {
+        while (n > 1) {
+            acc = acc * n;
+            n = n - 1;
+        }
+        return acc; 
     } else {
-        return 'impossible to calculate';
+        acc = 'impossible to calculate';
+        return acc;
     }
+    while (n > 1) {
+        acc = acc * n;
+        n = n - 1;
+    }
+    return acc;
 }
-
-console.log('The factorial of ' + n + ' is ' + factorial(n));
+console.log('The factorial of ' + n + ' is ' + acc)
